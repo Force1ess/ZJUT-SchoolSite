@@ -1,3 +1,12 @@
+#content::after {
+  content: '';
+  height: 5rem;
+  position: absolute;
+  bottom: -7rem;
+  /*! left: 0; */
+  /*! border-top: 1rem black solid; */
+  width: 120%;
+}
 .photo-wrap img:hover
 {
     transform: scale(1.2);
