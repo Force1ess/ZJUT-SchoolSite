@@ -11,17 +11,17 @@
 
    
 
-<img src="C:\Users\月下独饮小可爱\AppData\Roaming\Typora\typora-user-images\image-20210525172904919.png" alt="image-20210525172904919" style="zoom: 50%;" />
+<img src="resource/show1.png" style="zoom: 50%;" />
 
 2.  [新闻列表页](src/newsSite.html)
 
    
 
-   <img src="C:\Users\月下独饮小可爱\AppData\Roaming\Typora\typora-user-images\image-20210525173441987.png" alt="image-20210525173441987" style="zoom: 67%;" />
+   <img src="resource/show2.png" style="zoom: 67%;" />
 
 3. [新闻页](src/newsTemplate.html)
 
-![image-20210525173344371](C:\Users\月下独饮小可爱\AppData\Roaming\Typora\typora-user-images\image-20210525173344371.png)
+![image-20210525173344371](resource/show3.png)
 
 #### 遗憾
 
