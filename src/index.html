@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>浙江工业大学</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/universal.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="header">
+    <div id="top">
+        <section id="logo">
+            <a href="index.html">浙江工业大学</a>
+        </section>
+        <nav>
+            <a href="">学生培养</a>
+            <a href="">院系&师资</a>
+            <a href="">学术研究</a>
+            <a href="news.html">工大新闻</a>
+        </nav>
+        <button id="search"><a href="">🔍搜索</a></button>
+    </div>
+    <a id="jumpbar" href="#content">探索工大</a>
+</div>
+<div id="content">
+    <section id="Today">
+        <div class="wrap"><span>今日工大</span></div>
+        <div class="wrap"><span>{{ date }}</span></div>
+    </section>
+    <hr>
+    <div id="spe-wrap">
+        <a href="news.html"><span id="spe">新闻</span></a>
+    </div>
+    <section id="news">
+        <div v-for="item in news">
+            <div class="img-wrap">
+                <a :href="item.href">
+                    <img :src="item.src" alt="news">
+                </a>
+            </div>
+            <a :href="item.href">
+                <h3>{{ item.title }}</h3>
+            </a>
+        </div>
+    </section>
+    <hr>
+    <div id="footer">
+        <div id="footer-zjut">
+            <a href="index.html">
+                <img alt="LOGO" src="../resource/footer.jpg">
+            </a>
+        </div>
+        <div id="info">
+            <span>浙江省杭州市下城区潮王路18号</span>
+            <span>邮编 310014</span>
+            <span>查号台 0571-88320114</span>
+            <span>版权所有</span>
+            <span>浙公网安备 33010302002621号 </span>
+        </div>
+    </div>
+</div>
+<script src="../js/index.js"></script>
+</body>
+</html>

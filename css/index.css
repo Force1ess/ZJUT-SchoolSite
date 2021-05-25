@@ -1,0 +1,270 @@
+#header {
+    font-size: 1.2rem;
+    background-image: url("../resource/bg.jpg");
+    background-repeat: round;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0 53px 209px 1px;
+    display: flex;
+}
+
+#top {
+    box-shadow: inset 0 19px 40px -27px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+#logo a {
+    font-size: 2.2em;
+    transition: all 1s;
+}
+
+#logo a:hover {
+    color: lightgray;
+}
+
+nav {
+    padding-top: 1em;
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 2em;
+    min-height: 2em;
+    transition: all 0.4s;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: lightblue;
+}
+
+#jumpbar {
+    font-size: 1.5em;
+    bottom: 25%;
+    position: absolute;
+    left: 50%;
+    transition: all 0.6s;
+    display: inline-block;
+    transform: translate(-50%);
+}
+
+#jumpbar:hover:after {
+    content: '👇';
+}
+
+#search {
+    font-size: 0.8em;
+    transition: all 0.3s;
+    color: lightgray;
+    height: 12vh;
+}
+
+#search:hover {
+    transform: scale(1.4);
+    color: lightgray;
+}
+
+img {
+    width: 27em;
+}
+
+a {
+    position: relative;
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    border-top: white solid 0.25em;
+    width: 10%;
+    margin-left: 50%;
+    position: absolute;
+    transition: ease-in-out 0.5s;
+}
+
+nav a:hover:after {
+    visibility: visible;
+    width: 100%;
+    margin-left: 0;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+#content {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+.wrap span {
+    font-weight: bolder;
+    font-size: 2em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;
+}
+
+.wrap:first-child {
+    font-size: 1.7em;
+    margin: 1em;
+    padding: 1.5em 1.5em 0;
+}
+
+.wrap:first-child *:before,
+.wrap:first-child *:after {
+    content: '🏫';
+}
+
+.wrap:last-child span:before {
+    content: " 👨‍🎓  "
+}
+
+#news {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2.5em;
+    padding: 2em 2em 0;
+
+}
+
+#news > div {
+    width: 30em;
+    height: 13em;
+    /*! padding: 0; */
+    /*! border: #164654 solid; */
+    padding-top: 0.8em;
+    /*! border-radius: 2.4em; */
+    text-align: center;
+    box-shadow: 5px -5px 10px 1px;
+    margin-bottom: 1em;
+}
+
+#news div h3 {
+    margin: 0.41em;
+    color: black;
+}
+
+#news div img {
+    display: block;
+    max-width: 27em;
+    transition: 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+.img-wrap {
+
+    width: 27em;
+    overflow: hidden;
+    left: 50%;
+    /*! top: 50%; */
+    position: relative;
+    transform: translate(-50%);
+}
+
+hr {
+    margin-top: 1.4em;
+    width: 40em;
+    background-color: black;
+    height: 0.2em;
+}
+
+#news h3:before,
+#news h3:after {
+    content: '"';
+}
+
+#spe:before {
+    content: '#';
+}
+
+#spe {
+    color: black;
+    left: 50%;
+    display: inline-block;
+    position: relative;
+    transform: translate(-50%);
+    font-size: 1.7em;
+    transition: 1s;
+}
+
+#spe:hover:before {
+    content: '';
+}
+
+hr {
+    box-shadow: 0 1px 8px 1px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+#footer-zjut img {
+    width: 100%;
+}
+
+#info img {
+    width: 1em;
+}
+
+#footer div:first-child {
+    display: inline-block;
+}
+
+#info {
+    flex-grow: 1;
+    display: inline-grid;
+    grid-template-columns: 4fr 2fr 3fr 3fr 5fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#footer {
+    display: flex;
+    margin-top: 1em;
+}
+
+#footer a {
+    color: black;
+}
+
+#info span:first-child:before {
+    content: '🏠';
+}
+
+#info > span:nth-child(2):before {
+    content: '📫';
+}
+
+#info span:nth-child(3):before {
+    content: '📞';
+}
+
+#info span:nth-child(4):after {
+    content: '©浙江工业大学';
+}
+
+#info span:last-child:before {
+    content: '🚨'
+}
+
+#news img:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,149 @@
+#header {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0 53px 209px 1px;
+    display: flex;
+}
+
+#top {
+    box-shadow: inset 0 19px 40px -27px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+#logo a {
+    font-size: 2.2em;
+    transition: all 1s;
+}
+
+#logo a:hover {
+    color: lightgray;
+}
+
+nav {
+    padding-top: 1em;
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 2em;
+    min-height: 2em;
+    transition: all 0.4s;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: lightblue;
+}
+
+#search {
+    font-size: 0.8em;
+    transition: all 0.3s;
+    color: lightgray;
+    height: 12vh;
+}
+
+#search:hover {
+    transform: scale(1.4);
+    color: lightgray;
+}
+
+a {
+    position: relative;
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    border-top: white solid 0.25em;
+    width: 10%;
+    margin-left: 50%;
+    position: absolute;
+    transition: ease-in-out 0.5s;
+}
+
+nav a:hover:after {
+    visibility: visible;
+    width: 100%;
+    margin-left: 0;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+hr {
+    margin-top: 1.4em;
+    width: 40em;
+    background-color: black;
+    height: 0.2em;
+    box-shadow: 0 1px 8px 1px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+#footer-zjut img {
+    width: 100%;
+}
+
+#info img {
+    width: 1em;
+}
+
+#footer div:first-child {
+    display: inline-block;
+}
+
+#info {
+    flex-grow: 1;
+    display: inline-grid;
+    grid-template-columns: 4fr 2fr 3fr 3fr 5fr;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#footer {
+    display: flex;
+    margin-top: 1em;
+}
+
+#footer a {
+    color: black;
+}
+
+#info span:first-child:before {
+    content: '🏠';
+}
+
+#info > span:nth-child(2):before {
+    content: '📫';
+}
+
+#info span:nth-child(3):before {
+    content: '📞';
+}
+
+#info span:nth-child(4):after {
+    content: '©浙江工业大学';
+}
+
+#info span:last-child:before {
+    content: '🚨'
+}
+
+#content {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>浙江工业大学新闻站</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="../css/universal.css" rel="stylesheet">
+    <link href="../css/news.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="background"></div>
+<div id="header">
+    <div id="top">
+        <section id="logo">
+            <a href="index.html">浙江工业大学</a>
+        </section>
+        <nav>
+            <a href="">学生培养</a>
+            <a href="">院系&师资</a>
+            <a href="">学术研究</a>
+            <a href="news.html">工大新闻</a>
+        </nav>
+        <button id="search">🔍搜索</button>
+    </div>
+    <div id="content">
+        <div id="report">
+            <div v-for="item in news">
+                <a :href="item.href">
+                    {{ item.title }}
+                </a>
+                <a :href="item.href">
+                    <img :src="item.src" alt="news">
+                </a>
+                <div>
+                    {{ item.quote }}
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <div id="footer-zjut">
+                <a href="index.html">
+                    <img alt="LOGO" src="../resource/footer.jpg">
+                </a>
+            </div>
+            <div id="info">
+                <span>浙江省杭州市下城区潮王路18号</span>
+                <span>邮编 310014</span>
+                <span>查号台 0571-88320114</span>
+                <span>版权所有</span>
+                <span>浙公网安备 33010302002621号 </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/news.js"></script>
+</body>
+</html>
