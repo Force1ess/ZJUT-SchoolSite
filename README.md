@@ -26,14 +26,11 @@
 #### 遗憾
 
 - 未进行响应式设计
-
 - 未更好的利用Vue等
-
 - 没使用任何一个npm工具
-
 - 没有任何一个点击事件
-
 - 未使用Typescript
+- 新闻模板页中Vue的选择生成类型太少
 
 #### 收获
 
@@ -45,6 +42,6 @@
 
 #### 未来可能会加上
 
-- [ ] EsLint
+- [x] EsLint
 - [ ] Responsive Design
 - [ ] More Interaction
