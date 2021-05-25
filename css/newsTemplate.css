@@ -1,3 +1,59 @@
+.photo img
+{
+    width: 50vw;    
+}
+.photo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.text
+{
+    text-indent: 2em;
+    padding-left:2em;
+    padding-right: 2em;
+    letter-spacing: 0.07rem;
+}
+.text:first-child:first-letter
+{
+    font-size: 1.5em;
+}
+#news h1
+{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%);
+}
+#detail
+{
+    display: flex;
+    justify-content: space-around;
+}
+#detail span
+{
+    font-weight: 900;
+}
+#message 
+{
+margin: 2em;
+}
+#detail
+{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+#detail span:first-child
+{
+    /*! align-self: flex-end; */
+    /*! justify-self: flex-end; */
+}
 .photo-wrap img:hover
 {
     transform: scale(1.2);
@@ -5,11 +61,7 @@
 }
 .title-wrap a:hover
 {
-    text-shadow: 2px  -2px 24px;
-}
-.title-wrap a
-{
-    transition: all 0.3s ease-in-out;
+    text-shadow: 4px  -4px 20px;
 }
 .photo-wrap
 {
@@ -41,22 +93,20 @@
     display: inline-grid;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-42%);
+    transform: translate(-50%,-34%);
     border: 5px solid;
     border-radius: 2em;
-    padding:2em;
-    
-    padding-bottom: 4em;
+    padding: 2em 2em 4em;
 }
 #content a
 {
-color:black;
-font-size: 2em;
+    color:black;
+    font-size: 2em;
 }
 
 #content img
 {
-width: 17rem;
+    /*! width: 17rem; */
 }
 
 
@@ -225,7 +275,7 @@ footer {
 .photo-wrap
 {
     width: 18rem;
-    
+
 }
 .title-wrap
 {

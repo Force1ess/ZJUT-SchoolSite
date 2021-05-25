@@ -2,13 +2,14 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>浙江工业大学</title>
+    <title>浙江工业大学新闻站</title>
     <script src="../js/vue.js"></script>
-    <link href="../css/index.css" rel="stylesheet">
     <link href="../css/universal.css" rel="stylesheet">
+    <link href="../css/news.css" rel="stylesheet">
 </head>
 
 <body>
+<div id="background"></div>
 <div id="header">
     <div id="top">
         <section id="logo">
@@ -22,30 +23,26 @@
         </nav>
         <button id="search"><a href="">🔍搜索</a></button>
     </div>
-    <a id="jumpbar" href="#content">探索工大</a>
 </div>
 <div id="content">
-    <section id="Today">
-        <div class="wrap"><span>今日工大</span></div>
-        <div class="wrap"><span>{{ date }}</span></div>
-    </section>
-    <hr>
-    <div id="spe-wrap">
-        <a href="newsSite.html"><span id="spe">新闻</span></a>
-    </div>
-    <section id="news">
-        <div v-for="item in news" :key="item.id">
-            <div class="img-wrap">
+    <div id="report">
+        <div v-for="item in news" class="newsgrid" :key="item.id">
+            <div class="photo-wrap">
                 <a :href="item.href">
                     <img :src="item.src" alt="news">
                 </a>
             </div>
-            <a :href="item.href">
-                <h3>{{ item.title }}</h3>
-            </a>
+            <div class="title-wrap">
+                <a :href="item.href">
+                    {{ item.title }}
+                </a>
+                <div class="quote-wrap">
+                    {{ item.quote }}
+                </div>
+            </div>
+            <hr class="newhr">
         </div>
-    </section>
-    <hr>
+    </div>
     <div id="footer">
         <div id="footer-zjut">
             <a href="index.html">
@@ -61,6 +58,6 @@
         </div>
     </div>
 </div>
-<script src="../js/index.js"></script>
+<script src="../js/news.js"></script>
 </body>
 </html>

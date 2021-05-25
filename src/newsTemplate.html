@@ -2,13 +2,13 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>浙江工业大学</title>
+    <title>浙江工业大学新闻模板</title>
     <script src="../js/vue.js"></script>
-    <link href="../css/index.css" rel="stylesheet">
     <link href="../css/universal.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/newsTemplate.css">
 </head>
-
 <body>
+<div id="background"></div>
 <div id="header">
     <div id="top">
         <section id="logo">
@@ -22,29 +22,31 @@
         </nav>
         <button id="search"><a href="">🔍搜索</a></button>
     </div>
-    <a id="jumpbar" href="#content">探索工大</a>
 </div>
 <div id="content">
-    <section id="Today">
-        <div class="wrap"><span>今日工大</span></div>
-        <div class="wrap"><span>{{ date }}</span></div>
-    </section>
-    <hr>
-    <div id="spe-wrap">
-        <a href="newsSite.html"><span id="spe">新闻</span></a>
-    </div>
-    <section id="news">
-        <div v-for="item in news" :key="item.id">
-            <div class="img-wrap">
-                <a :href="item.href">
-                    <img :src="item.src" alt="news">
-                </a>
-            </div>
-            <a :href="item.href">
-                <h3>{{ item.title }}</h3>
-            </a>
+    <div id="news">
+        <div><h1>{{title}}</h1></div>
+        <hr>
+        <div id="detail">
+            <span>{{ author }}</span>
+            <span>{{time}}</span>
         </div>
-    </section>
+        <div id="message">
+            <div v-for="item in report" :key="item.id">
+                <div v-if="item.type==='p'">
+                    <p v-for="content in item.text" class="text">
+                        {{content}}
+                    </p>
+                </div>
+                <div class="photo">
+                    <img v-if="item.type==='photo'" :src="item.src" :alt="item.slide">
+                    <span v-if="item.type==='photo'" class="img-span">
+                    {{item.slide}}
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
     <hr>
     <div id="footer">
         <div id="footer-zjut">
@@ -61,6 +63,6 @@
         </div>
     </div>
 </div>
-<script src="../js/index.js"></script>
+<script src="../js/newsTemplate.js"></script>
 </body>
 </html>
